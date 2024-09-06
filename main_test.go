@@ -1,4 +1,4 @@
-package main
+package corpnum
 
 import (
 	"bufio"
@@ -6,13 +6,13 @@ import (
 	"testing"
 )
 
-func TestCheckCorporateNumber(t *testing.T) {
+func TestCheck(t *testing.T) {
 	t.Parallel()
 
 	for _, number := range getTestNumbers(t) {
 		t.Run(number, func(t *testing.T) {
 			t.Parallel()
-			if !CheckCorporateNumber(number) {
+			if !Check(number) {
 				t.Errorf("want true, got false")
 			}
 		})

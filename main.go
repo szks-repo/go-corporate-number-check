@@ -1,4 +1,4 @@
-package main
+package corpnum
 
 import (
 	"regexp"
@@ -8,7 +8,7 @@ import (
 
 var corpNumPattern = regexp.MustCompile(`^[1-9]{1}\d{12}$`)
 
-func CheckCorporateNumber(number string) bool {
+func Check(number string) bool {
 	if !corpNumPattern.MatchString(number) {
 		return false
 	}
