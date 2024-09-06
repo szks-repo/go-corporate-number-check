@@ -1,3 +1,3 @@
 # go-corporate-number-check
 
-Golang implementation of veriy japanese corporation number checkdigit
+Golang implementation of verify japanese corporation number checkdigit
