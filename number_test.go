@@ -26,6 +26,7 @@ func getTestNumbers(t *testing.T) []string {
 	if err != nil {
 		t.Fatal(err)
 	}
+	defer f.Close()
 
 	var numbers []string
 	scanner := bufio.NewScanner(f)
